@@ -1,4 +1,5 @@
-import request from '../utils/request';
+// import request from '../utils/request';
+import { queryHeroList, getHeroDetails } from '@/services/hero';
 
 export default {
     namespce: 'hero',
@@ -28,16 +29,16 @@ export default {
         * fetch({ type, payload }, { put, call, select }) {
             // const data = yield request('https://pvp.qq.com/web201605/js/herolist.json');
             // const data = yield request('/api/herolist.json')
-            const data = yield request('/api/herodetails.json', {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json; charset=utf-8',
-                },
-                body: JSON.stringify({
-                    ename: 110,
-                }),
-            });
+            // const data = yield request('/api/herodetails.json', {
+            //     method: 'POST',
+            //     body: {
+            //         ename: 110,
+            //     },
+            // });
+
+            const herolist = yield call(queryHeroList);
+            const herodetails = yield call(getHeroDetails, { ename: 110 });
+            console.log(herodetails)
             const localData = [
                 {
                     ename: 105,
@@ -59,7 +60,7 @@ export default {
             yield put({
                 type: 'save',
                 payload: {
-                    heros: data || localData,
+                    heros: herolist || localData,
                 },
             });
         },
