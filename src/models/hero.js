@@ -1,4 +1,4 @@
-import request from '../utils/request'
+import request from '../utils/request';
 
 export default {
     namespce: 'hero',
@@ -26,7 +26,18 @@ export default {
     },
     effects: {
         * fetch({ type, payload }, { put, call, select }) {
-            const data = yield request('https://pvp.qq.com/web201605/js/herolist.json');
+            // const data = yield request('https://pvp.qq.com/web201605/js/herolist.json');
+            // const data = yield request('/api/herolist.json')
+            const data = yield request('/api/herodetails.json', {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json; charset=utf-8',
+                },
+                body: JSON.stringify({
+                    ename: 110,
+                }),
+            });
             const localData = [
                 {
                     ename: 105,
