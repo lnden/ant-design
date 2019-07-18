@@ -1,10 +1,13 @@
 // import request from '../utils/request';
-import { queryHeroList, getHeroDetails } from '@/services/hero';
+import { queryHeroList, getHeroDetails, getFreeHeros } from 'services/api';
 
 export default {
     namespce: 'hero',
     state: {
         heros: [],
+        filterKey: 0,
+        freeheros: [],
+        itemHover: 0,
     },
     subscriptions: {
         setup({ dispatch, history }) {
@@ -38,7 +41,9 @@ export default {
 
             const herolist = yield call(queryHeroList);
             const herodetails = yield call(getHeroDetails, { ename: 110 });
-            console.log(herodetails)
+            console.log(herodetails);
+            const freeheros = yield call(getFreeHeros, { number: 13 });
+            console.log(freeheros, 6666666666);
             const localData = [
                 {
                     ename: 105,
@@ -61,6 +66,7 @@ export default {
                 type: 'save',
                 payload: {
                     heros: herolist || localData,
+                    freeheros: freeheros,
                 },
             });
         },

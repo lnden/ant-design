@@ -1,4 +1,4 @@
-import { querySummoner } from '../services/api';
+import { querySummoner } from 'services/api';
 
 export default {
     name: 'summoner',
@@ -26,7 +26,9 @@ export default {
             const summoner = yield call(querySummoner);
             yield put({
                 type: 'save',
-                payload:summoner
+                payload:{
+                    summoners:summoner
+                }
             })
         },
     },

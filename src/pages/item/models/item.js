@@ -1,9 +1,10 @@
-import { queryItem } from '../services/api';
+import { queryItem } from 'services/api';
 
 export default {
     name: 'item',
     state: {
         items: [],
+        filterKey: 0
     },
     subscriptions: {
         setup({ dispatch, history }) {
@@ -26,7 +27,9 @@ export default {
             const item = yield call(queryItem);
             yield put({
                 type: 'save',
-                payload: item,
+                payload: {
+                    items: item,
+                },
             });
         },
     },

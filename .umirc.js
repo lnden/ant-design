@@ -1,4 +1,5 @@
 // ref: https://umijs.org/config/
+const path = require('path');
 export default {
     // history: 'hash',
     treeShaking: true,
@@ -29,4 +30,9 @@ export default {
     //         'pathRewrite': { '^/api': '' },
     //     },
     // },
+    alias: {
+        utils: path.resolve(__dirname, 'src/utils'),
+        services: path.resolve(__dirname, 'src/services'),
+        models: path.resolve(__dirname, 'src/models'),
+    },
 };

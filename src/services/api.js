@@ -18,3 +18,10 @@ export async function queryItem() {
 export async function querySummoner() {
     return request('/api/summoner.json');
 }
+
+export async function getFreeHeros(params) {
+    return request('/api/freeheros.json', {
+        method: 'POST',
+        body: params,
+    });
+}
