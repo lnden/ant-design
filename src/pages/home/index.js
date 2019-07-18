@@ -1,8 +1,11 @@
+import { connect } from 'dva'
 
-export default function() {
+function Home(props) {
     return (
         <div>
-            测试
+            测试{props.discover}
         </div>
     );
 }
+
+export default connect(({discover})=>({discover}))(Home)
