@@ -1,10 +1,14 @@
-
+import { connect } from 'dva';
 import styles from './summoner.css';
 
-export default function() {
-  return (
-    <div className={styles.normal}>
-      <h1>Page summoner</h1>
-    </div>
-  );
+function Summoner(props) {
+    console.log(props);
+    return (
+        <div className={styles.normal}>
+            <h1>Page summoner</h1>
+            <h2>This is {props.summoner}</h2>
+        </div>
+    );
 }
+
+export default connect(({ summoner }) => ({ summoner }))(Summoner);
