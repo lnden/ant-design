@@ -40,10 +40,9 @@ export default {
             // });
 
             const herolist = yield call(queryHeroList);
-            const herodetails = yield call(getHeroDetails, { ename: 110 });
-            console.log(herodetails);
+            // const herodetails = yield call(getHeroDetails, { ename: 110 });
+            // console.log(herodetails);
             const freeheros = yield call(getFreeHeros, { number: 13 });
-            console.log(freeheros, 6666666666);
             const localData = [
                 {
                     ename: 105,

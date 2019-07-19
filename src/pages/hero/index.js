@@ -20,7 +20,6 @@ function Hero({ hero, dispatch }) {
     // console.log(props.hero.heros)
 
     const onChange = e => {
-        console.log(e.target.value);
         dispatch({
             type: 'hero/save',
             payload: {
