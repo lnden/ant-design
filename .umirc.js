@@ -2,6 +2,8 @@
 const path = require('path');
 export default {
     // history: 'hash',
+    base: '/react-umi',
+    publicPath: '/react-umi/',
     treeShaking: true,
     plugins: [
         // ref: https://umijs.org/plugin/umi-plugin-react.html
@@ -23,13 +25,13 @@ export default {
             },
         }],
     ],
-    // 'proxy': {
-    //     '/api': {
-    //         'target': 'https://pvp.qq.com/web201605/js/',
-    //         'changeOrigin': true,
-    //         'pathRewrite': { '^/api': '' },
-    //     },
-    // },
+    'proxy': {
+        '/api': {
+            'target': 'https://pvp.qq.com/web201605/js/',
+            'changeOrigin': true,
+            'pathRewrite': { '^/api': '' },
+        },
+    },
     alias: {
         utils: path.resolve(__dirname, 'src/utils'),
         services: path.resolve(__dirname, 'src/services'),

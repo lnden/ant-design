@@ -1,10 +1,11 @@
 import { queryItem } from 'services/api';
+import items from './item.json';
 
 export default {
     name: 'item',
     state: {
         items: [],
-        filterKey: 0
+        filterKey: 0,
     },
     subscriptions: {
         setup({ dispatch, history }) {
@@ -28,7 +29,7 @@ export default {
             yield put({
                 type: 'save',
                 payload: {
-                    items: item,
+                    items: item || items,
                 },
             });
         },
