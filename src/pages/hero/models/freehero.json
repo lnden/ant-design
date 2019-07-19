@@ -1,0 +1,111 @@
+[
+    {
+        "ename": 199,
+        "cname": "公孙离",
+        "title": "幻舞玲珑",
+        "new_type": 0,
+        "hero_type": 5,
+        "skin_name": "幻舞玲珑|花间舞|蜜橘之夏"
+    },
+    {
+        "ename": 168,
+        "cname": "牛魔",
+        "title": "精英酋长",
+        "new_type": 0,
+        "hero_type": 3,
+        "hero_type2": 6,
+        "skin_name": "精英酋长|西部大镖客|制霸全明星"
+    },
+    {
+        "ename": 504,
+        "cname": "米莱狄",
+        "title": "筑城者",
+        "new_type": 0,
+        "hero_type": 2,
+        "skin_name": "筑城者|精准探案法|御霄"
+    },
+    {
+        "ename": 501,
+        "cname": "明世隐",
+        "title": "灵魂劫卜",
+        "new_type": 0,
+        "hero_type": 6,
+        "skin_name": "灵魂劫卜|占星术士|虹云星官"
+    },
+    {
+        "ename": 136,
+        "cname": "武则天",
+        "title": "女帝",
+        "new_type": 0,
+        "hero_type": 2,
+        "skin_name": "女帝|东方不败|海洋之心"
+    },
+    {
+        "ename": 120,
+        "cname": "白起",
+        "title": "最终兵器",
+        "new_type": 0,
+        "hero_type": 3,
+        "skin_name": "最终兵器|白色死神|狰|星夜王子"
+    },
+    {
+        "ename": 132,
+        "cname": "马可波罗",
+        "title": "远游之枪",
+        "new_type": 0,
+        "hero_type": 5,
+        "skin_name": "远游之枪|激情绿茵|逐梦之星"
+    },
+    {
+        "ename": 173,
+        "cname": "李元芳",
+        "title": "王都密探",
+        "new_type": 0,
+        "hero_type": 5,
+        "skin_name": "王都密探|特种部队|黑猫爱糖果|逐浪之夏"
+    },
+    {
+        "ename": 133,
+        "cname": "狄仁杰",
+        "title": "断案大师",
+        "pay_type": 11,
+        "new_type": 0,
+        "hero_type": 5,
+        "skin_name": "断案大师|锦衣卫|魔术师|超时空战士|阴阳师"
+    },
+    {
+        "ename": 112,
+        "cname": "鲁班七号",
+        "title": "机关造物",
+        "pay_type": 11,
+        "new_type": 0,
+        "hero_type": 5,
+        "skin_name": "机关造物|木偶奇遇记|福禄兄弟|电玩小子|星空梦想"
+    },
+    {
+        "ename": 108,
+        "cname": "墨子",
+        "title": "和平守望",
+        "new_type": 0,
+        "hero_type": 2,
+        "hero_type2": 3,
+        "skin_name": "和平守望|金属风暴|龙骑士|进击墨子号"
+    },
+    {
+        "ename": 529,
+        "cname": "盘古",
+        "title": "破晓之神",
+        "new_type": 0,
+        "hero_type": 1,
+        "skin_name": "破晓之神"
+    },
+    {
+        "ename": 123,
+        "cname": "吕布",
+        "title": "无双之魔",
+        "new_type": 0,
+        "hero_type": 1,
+        "hero_type2": 3,
+        "skin_name": "无双之魔|圣诞狂欢|天魔缭乱|末日机甲|猎兽之王"
+    }
+]

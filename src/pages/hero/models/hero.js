@@ -1,6 +1,7 @@
 // import request from '../utils/request';
 import { queryHeroList, getHeroDetails, getFreeHeros } from 'services/api';
 import herolists from './herolist.json'
+import freeheros from './freehero.json'
 
 export default {
     namespce: 'hero',
@@ -43,13 +44,13 @@ export default {
             const herolist = yield call(queryHeroList);
             // const herodetails = yield call(getHeroDetails, { ename: 110 });
             // console.log(herodetails);
-            const freeheros = yield call(getFreeHeros, { number: 13 });
+            const freehero = yield call(getFreeHeros, { number: 13 });
 
             yield put({
                 type: 'save',
                 payload: {
                     heros: herolist || herolists,
-                    freeheros: freeheros,
+                    freeheros: freehero || freeheros,
                 },
             });
         },
