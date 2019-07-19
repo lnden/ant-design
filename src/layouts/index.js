@@ -6,9 +6,9 @@ const { Header, Content, Footer } = Layout;
 const { Item } = Menu;
 
 const menuData = [
-    { route: 'hero', name: '英雄' },
-    { route: 'item', name: '局内道具' },
-    { route: 'summoner', name: '召唤师技能' },
+    { route: '/hero', name: '英雄' },
+    { route: '/item', name: '局内道具' },
+    { route: '/summoner', name: '召唤师技能' },
 ];
 
 function BasicLayout(props) {
