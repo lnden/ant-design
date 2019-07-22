@@ -2,7 +2,6 @@ import { connect } from 'dva';
 import { Button } from 'antd'
 
 const ViewContent = (props) => {
-    console.log(props,1111)
     return (
         <section>
             <Button onClick={()=>{ props.dispatch({type:'discover/add'})} }>加</Button>
