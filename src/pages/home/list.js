@@ -1,8 +1,7 @@
-
 export default function() {
     return (
         <div>
-            测试list
+            /home/list页面
         </div>
     );
 }

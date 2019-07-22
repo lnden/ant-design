@@ -1,11 +1,11 @@
-import { connect } from 'dva'
+import { connect } from 'dva';
 
 function Home(props) {
     return (
         <div>
-            测试{props.discover}
+            index页面，获取dvaID值：{props.discover}
         </div>
     );
 }
 
-export default connect(({discover})=>({discover}))(Home)
+export default connect(({ discover }) => ({ discover }))(Home);

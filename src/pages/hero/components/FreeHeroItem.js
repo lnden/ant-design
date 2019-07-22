@@ -2,7 +2,6 @@ import Link from 'umi/link';
 
 function FreeHeroItem({ data, thisIndex, onItemHover, itemHover }) {
     if (!data || !data.ename) return null;
-console.log(data)
     return (
         <Link to={`/herodetails/${data.ename}`}>
             <img
@@ -18,6 +17,7 @@ console.log(data)
                 src={`https://game.gtimg.cn/images/yxzj/img201606/heroimg/${data.ename}/${data.ename}${
                     itemHover === thisIndex ? '-freehover.png' : '.jpg'
                     }`}
+                alt={data.cname}
             />
         </Link>
     );

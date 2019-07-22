@@ -1,5 +1,6 @@
 // import request from '../utils/request';
-import { queryHeroList, getHeroDetails, getFreeHeros } from 'services/api';
+// import { getHeroDetails } from 'services/api';
+import { queryHeroList, getFreeHeros } from 'services/api';
 import herolists from './herolist.json'
 import freeheros from './freehero.json'
 

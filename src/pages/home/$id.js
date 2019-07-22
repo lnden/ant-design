@@ -1,8 +1,7 @@
-
-export default function() {
+export default function({ match }) {
     return (
         <div>
-            测试动态ID
+            测试动态ID：{match.params.id}
         </div>
     );
 }

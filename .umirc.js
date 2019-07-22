@@ -2,7 +2,7 @@
 const path = require('path');
 export default {
     // history: 'hash',
-    base: '/react-umi',
+    // base: '/react-umi',
     publicPath: '/react-umi/',
     treeShaking: true,
     plugins: [
